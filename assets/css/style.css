@@ -378,10 +378,10 @@ select:visited {
 .event-location {
   display: inline-block;
   padding: 16px;
-  border: 1px solid #ffffff66;
+  border: 1px solid #5e0a0c;
   text-align: center;
   border-radius: 8px;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .line_animation {
@@ -430,6 +430,49 @@ select:visited {
 .line_animation .line_area:nth-child(odd):before {
   -webkit-animation: line_animation_2 20s ease-out infinite;
   animation: line_animation_2 20s ease-out infinite;
+}
+
+.highlighted-text.ori-slider-text h4 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #5e0a0c;
+}
+.highlighted_container_content {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  padding: 24px;
+  border-radius: 16px;
+}
+.highlighted-text.ori-slider-text p {
+  font-size: 1.2rem;
+}
+
+.sponsors-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sponsors-container .group {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.sponsors-container img {
+  width: auto;
+  height: 100px;
+}
+
+.sponsors-container .title {
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 @-webkit-keyframes icon-bounce {
@@ -1016,9 +1059,6 @@ footer .line_area:not(:first-child) {
   font-size: 14px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-}
-.footer-credits {
-  z-index: 1000;
 }
 /*Search popup Page*/
 /*-------------------*/
@@ -11398,10 +11438,6 @@ Font load
     height: 100vh !important;
     transform: translateY(-50%) !important;
   }
-  footer.ori-sponsor-section-1 {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
   .brand-logo img {
     height: 100px;
   }
@@ -13036,8 +13072,16 @@ Font load
   }
   .event-location {
     padding: 4px;
-    margin-top: 16px;
     font-size: 0.6rem;
+  }
+
+  .ori-vission-section,
+  .ori-about-circle-progress-section,
+  .ori-about-gallery-section,
+  .ori-about-video-section,
+  .ori-footer-section,
+  .ori-portfolio-feed-section {
+    padding: 40px 0;
   }
   .ori-header-login-signup .ori-login-btn button span {
     display: none;
@@ -13048,15 +13092,6 @@ Font load
   .ori-slider-content-1 {
     padding: 80px 0 80px;
   }
-  .ori-vission-section,
-  .ori-sponsor-section-1,
-  .ori-portfolio-feed-section {
-    padding-top: 0 !important;
-  }
-
-  section#ori-about-circle-progress {
-    padding: 0;
-  }
 
   .ori-slider-content-2.slick-current.slick-active .ori-slider-text h2 {
     margin-top: 3.5rem;
@@ -13065,17 +13100,6 @@ Font load
 
   .ori-service-why-choose-text .ori-service-why-choose-list-item {
     padding-top: 28px;
-  }
-  .ori-event-content,
-  .ori-gallery {
-    margin-bottom: 28px !important;
-  }
-  .ori-footer-section {
-    padding-top: 40px !important;
-    padding-bottom: 40px !important;
-  }
-  .ori-sponsor-title {
-    margin-bottom: 20px;
   }
   .ori-slider-text h1 {
     font-size: 50px;
@@ -13341,41 +13365,12 @@ Font load
     font-size: 50px;
   }
 
-  .ori-text-scroll-section-1,
-  .ori-text-scroll-section-2 {
-    padding: 40px 0px;
-  }
-
-  .ori-team-section-1 {
-    padding-top: 80px;
-  }
-
   .ori-team-content-area {
     padding: 60px 0px 30px;
   }
 
-  .ori-team-content-1 {
-    padding-top: 40px;
-  }
-
-  .ori-testimonial-section-1 {
-    padding: 80px 0px;
-  }
-
-  .ori-blog-section-1 {
-    padding: 60px 0px 30px;
-  }
-
-  .ori-blog-content-1 {
-    padding-top: 50px;
-  }
-
   .ori-footer-title h2 {
     font-size: 30px;
-  }
-
-  .ori-footer-widget-wrapper {
-    padding: 60px 0px 30px;
   }
 
   .ori-footer-copyright {
@@ -13401,16 +13396,8 @@ Font load
     height: 260px;
   }
 
-  .ori-banner-section-1 {
-    padding-top: 50px;
-  }
-
   .ori-header-section.header-style-two.sticky-on {
     padding: 20px 15px;
-  }
-
-  .ori-fun-fact-section {
-    padding: 60px 0px 30px;
   }
 
   .ori-fun-fact-item .ori-fun-fact-text h3 {
@@ -13419,10 +13406,6 @@ Font load
 
   .ori-integration-section .ori-section-title-2 h2 {
     font-size: 36px;
-  }
-
-  .ori-integration-section {
-    padding: 60px 0px;
   }
 
   .ori-integration-content {
@@ -14371,10 +14354,6 @@ Font load
     margin-left: 10px;
   }
 
-  .ori-portfolio-feed-section {
-    padding: 60px 0px;
-  }
-
   .ori-portfolio-filter-btn {
     padding-bottom: 40px;
   }
@@ -14656,6 +14635,21 @@ Font load
   }
 }
 @media screen and (max-width: 680px) {
+  .highlighted-text.ori-slider-text h4 {
+    font-size: 1.2rem;
+  }
+
+  .highlighted-text.ori-slider-text p {
+    font-size: 0.8rem;
+  }
+
+  .ori-service-why-choose-text {
+    padding-top: 0;
+  }
+  .ori-vission-section .ori-service-why-choose-text {
+    margin-bottom: 40px;
+  }
+
   .ori-header-section .brand-logo img {
     height: 100px;
   }
