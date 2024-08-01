@@ -7097,7 +7097,8 @@ section.ori-slider-section-1 {
 }
 
 .ori-about-circle-progress-section,
-.ori-about-gallery-section {
+.ori-about-gallery-section,
+.ori-about-video-section {
   padding: 80px 0 80px 0;
   overflow: hidden;
 }
