@@ -7103,6 +7103,12 @@ section.ori-slider-section-1 {
   overflow: hidden;
 }
 
+.ori-about-circle-progress-section,
+.ori-about-video-section,
+.ori-text-scroll-section-1 {
+  background-color: #2406040f;
+}
+
 h2.ori-event-title {
   font-size: 50px;
   font-weight: 600;
